@@ -9,8 +9,10 @@ Each subdirectory contains some code that needs refactoring.
 
 
 ## `time/timestamp.py`
-
-Refactor timestamp.py.  2 or 3 refactorings are possible.
+1. rename method match to pydocstyle.
+2. Change a condition to method to easy to understand.
+3. define args to tuple type for easy to understand.
+4. delete elseif because it  is not necessary.
 
 
 ## `game_framework/gamelib.py`

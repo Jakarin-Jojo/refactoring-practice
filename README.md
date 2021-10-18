@@ -22,7 +22,12 @@ Look for refactorings in the class `GameApp`.
 * Avoid side-effects: replace side effect with return value (the caller must use the return value)
 
 * Encapsulate a collection - provide behavior that subclasses of GameApp need instead of requiring them to manipulate a collection that belongs to the GameApp class.
-  - Hint: `elements`
+  - Hint: `elements`  
+
+**Refactor:**  
+  - Replace string literal with name constant
+  - Create add_element() and remove_element() for encapsulating the element  
+  - Modify create_canvas() return the object and set canvas get value from parameter create_canvas().
 
 ## `recipe/recipe.py` and `recipe/main.py`
 
@@ -36,7 +41,9 @@ The Recipe class defines a recipe for a hot beverage with attributes:
 * sugar - units of sugar
 * price - (float) price in Baht
 
-Refactor `main.py`.  What can you do to eliminate the long, boring code?
+Refactor `main.py`.  What can you do to eliminate the long, boring code?  
+**Refactor:**
+- Create the `create_recipe` function to create `Recipe` Class directly and to easy to create objects.
 
 
 
